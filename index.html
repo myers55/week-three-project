@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+  <div class="calculator" onsubmit="javascript:call(document.getElementById('display').value); return false;">
+    <div class="row top">
+      <div class="numberChoices"><button onclick='calls(this.value);' id='C' type="button" class='numbers execute sizes' value='C'>C</button></div>
+      <div class="displaybox"><input id='display' type="text" class='numbers display'></div>
+    </div>
+    <div class="row">
+      <div class="numberChoices"><button onclick='calls(this.value);' id="seven" type="button" value="7" class='numbers sizes'>7</button></div>
+      <div class="numberChoices"><button onclick='calls(this.value);' id="eight" type="button" value="8" class='numbers sizes'>8</button></div>
+      <div class="numberChoices"><button onclick='calls(this.value);' id="nine" type="button" value="9" class='numbers sizes'>9</button></div>
+      <div class="numberChoices"><button onclick='calls(this.value);' id="divide" type="button" value="/" class="operators sizes">/</button></div>
+    </div>
+    <div class="row">
+      <div class="numberChoices"><button onclick='calls(this.value);' id="four" type="button" value="4" class='numbers sizes'>4</button></div>
+      <div class="numberChoices"><button onclick='calls(this.value);' id="five" type="button" value="5" class='numbers sizes'>5</button></div>
+      <div class="numberChoices"><button onclick='calls(this.value);' id="six" type="button" value="6" class='numbers sizes'>6</button></div>
+      <div class="numberChoices"><button onclick='calls(this.value);' id="multiply" type="button" value="*" class="operators sizes">x</button></div>
+    </div>
+    <div class="row">
+      <div class="numberChoices"><button onclick='calls(this.value);' id="one" type="button" value="1" class='numbers sizes'>1</button></div>
+      <div class="numberChoices"><button onclick='calls(this.value);' id="two" type="button" value="2" class='numbers sizes'>2</button></div>
+      <div class="numberChoices"><button onclick='calls(this.value);' id="three" type="button" value="3" class='numbers sizes'>3</button></div>
+      <div class="numberChoices"><button onclick='calls(this.value);' id="subtract" type="button" value="-" class="operators sizes">-</button></div>
+    </div>
+    <div class="row">
+      <div class="numberChoices"><button onclick='calls(this.value);' id="zero" type="button" value="0" class='numbers sizes'>0</button></div>
+      <div class="numberChoices"><button onclick='calls(this.value);' id="decimal" type="button" value="." class='numbers sizes'>.</button></div>
+      <div class="numberChoices"><button onclick='calls(this.value);' id="equals" type="button" value="=" class='numbers sizes execute'>=</button></div>
+      <div class="numberChoices"><button onclick='calls(this.value);' id="add" type="button" value="+" class="operators sizes">+</button></div>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>
