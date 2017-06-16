@@ -52,3 +52,10 @@ function call(equation)
     var result = eval(equation);
     document.getElementById('display').value = result;
 }  
+function call(equation) {
+    document.getElementById('display').value = result;
+}
+
+function calculate() {
+    document.getElementById('display').value = eval(document.getElementById('display').value);
+} 

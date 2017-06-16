@@ -12,7 +12,7 @@
   <div class="calculator" onsubmit="javascript:call(document.getElementById('display').value); return false;">
     <div class="row top">
       <div class="numberChoices"><button onclick='calls(this.value);' id='C' type="button" class='numbers execute sizes' value='C'>C</button></div>
-      <div class="displaybox"><input id='display' type="text" class='numbers display'></div>
+      <div class="displaybox"><input id='display' type="text" class='numbers display' maxlength="10"></div>
     </div>
     <div class="row">
       <div class="numberChoices"><button onclick='calls(this.value);' id="seven" type="button" value="7" class='numbers sizes'>7</button></div>
@@ -35,7 +35,7 @@
     <div class="row">
       <div class="numberChoices"><button onclick='calls(this.value);' id="zero" type="button" value="0" class='numbers sizes'>0</button></div>
       <div class="numberChoices"><button onclick='calls(this.value);' id="decimal" type="button" value="." class='numbers sizes'>.</button></div>
-      <div class="numberChoices"><button onclick='calls(this.value);' id="equals" type="button" value="=" class='numbers sizes execute'>=</button></div>
+      <div class="numberChoices"><button onclick="calculate()" id="equals" type="button" value="=" class='numbers sizes execute'>=</button></div>
       <div class="numberChoices"><button onclick='calls(this.value);' id="add" type="button" value="+" class="operators sizes">+</button></div>
     </div>
   </div>
@@ -43,3 +43,8 @@
 </body>
 
 </html>
+
+
+
+
+
